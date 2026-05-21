@@ -373,16 +373,23 @@ function renderActive() {
 function renderAvailable() {
   const { lang } = state;
   const t        = COPY[lang];
-  const items    = (CONFIG.availableIds || []).map(resolveAvail).filter(Boolean);
+  const ids      = CONFIG.availableIds || [];
+  const items    = ids.map(id => id === null ? null : resolveAvail(id));
+  const realCount = items.filter(Boolean).length;
   const el       = document.getElementById('section-available');
-  if (!items.length) { el.innerHTML = ''; return; }
+  if (!realCount) { el.innerHTML = ''; return; }
+  const gridItems = items.map(c =>
+    c === null
+      ? `<div style="grid-column:1/-1;height:1px;background:rgba(57,52,75,0.12);margin:8px 0"></div>`
+      : gridCardHTML(c)
+  ).join('');
   el.innerHTML = `
     <div class="section-header"><div>
-      <div class="eyebrow" style="margin-bottom:12px">02 / 02 &middot; ${items.length} ${lang === 'no' ? 'konsulenter' : 'consultants'}</div>
+      <div class="eyebrow" style="margin-bottom:12px">02 / 02 &middot; ${realCount} ${lang === 'no' ? 'konsulenter' : 'consultants'}</div>
       <h2 class="section-title">${fill(t.section2, { client: CONFIG.client })}</h2>
       <p class="section-sub">${fill(t.section2Sub, { client: CONFIG.client })}</p>
     </div></div>
-    <div class="avail-grid">${items.map(gridCardHTML).join('')}</div>`;
+    <div class="avail-grid">${gridItems}</div>`;
 }
 
 function renderContact() {

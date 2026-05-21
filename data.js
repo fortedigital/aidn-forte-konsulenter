@@ -194,6 +194,24 @@ window.CONSULTANT_POOL = [
 
   // ─── Available – fra 1. august 2026 ───────────────────────────────────────
   {
+    id: "guro",
+    flowcaseId: "68ada1c77e4f98671bdd0965",
+    name: "Guro Vassend",
+    role: { no: "Data Scientist", en: "Data Scientist" },
+    skills: ["GA4", "Google Tag Manager", "BigQuery", "Google Cloud", "Power BI"],
+    years: 7,
+    defaultRate: 1400,
+    photo: "assets/photos/guro.png",
+    education: {
+      no: "Siv.ing Maskin, prosess- og produktutvikling, NMBU (2018)",
+      en: "M.Sc. Mechanical Engineering (process & product development), NMBU (2018)",
+    },
+    bio: {
+      no: "Director of Data & AI hos Forte med fem år som Data Scientist i Knowit Experience. Bred kompetanse i digital analyse og datadrevet optimalisering: GA4, GTM, BigQuery og Google Cloud. Har ledet implementeringer og workshops for kunder i netthandel og industri, med særlig styrke på konverteringsoptimalisering, KPI-rammeverk og innsiktsarbeid.",
+      en: "Director of Data & AI at Forte with five years as a Data Scientist at Knowit Experience. Broad expertise in digital analytics and data-driven optimisation: GA4, GTM, BigQuery and Google Cloud. Has led implementations and workshops for clients in e-commerce and industry, with particular strength in conversion optimisation, KPI frameworks and user insights.",
+    },
+  },
+  {
     id: "lise",
     flowcaseId: "6909d3aaafa2936e2c192de7",
     name: "Lise Grønland",
@@ -297,7 +315,7 @@ window.DEFAULT_CONFIG = {
     phone: "+47 907 25 404",
   },
   activeIds: ["danijel", "fredrik", "frode"],
-  availableIds: ["damian", "henrik-farstad", "lise", "sindre", "aslak", "pal", "heidi", "anders", "silje"],
+  availableIds: ["damian", "henrik-farstad", "lise", null, "sindre", "aslak", "pal", "heidi", "anders", "guro", "silje"],
   rates: {},
   since: {
     danijel: "",
@@ -313,6 +331,7 @@ window.DEFAULT_CONFIG = {
     damian:          { no: "1. juni 2026",    en: "Jun 1, 2026"  },
     "henrik-farstad": { no: "1. juni 2026",   en: "Jun 1, 2026"  },
     anders:          { no: "1. juni 2026",    en: "Jun 1, 2026"  },
+    guro:            { no: "1. august 2026",    en: "Aug 1, 2026"  },
     lise:            { no: "1. september 2026", en: "Sep 1, 2026"  },
     silje:           { no: "1. august 2026",  en: "Aug 1, 2026"  },
   },
