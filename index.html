@@ -380,7 +380,7 @@ function renderAvailable() {
   if (!realCount) { el.innerHTML = ''; return; }
   const gridItems = items.map(c =>
     c === null
-      ? `<div style="grid-column:1/-1;height:1px;background:rgba(57,52,75,0.12);margin:8px 0"></div>`
+      ? `<div style="grid-column:1/-1;display:flex;align-items:center;gap:24px;padding:80px 0 40px"><span style="flex:1;height:1px;background:rgba(57,52,75,0.10)"></span></div>`
       : gridCardHTML(c)
   ).join('');
   el.innerHTML = `
