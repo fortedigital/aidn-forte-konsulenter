@@ -1,0 +1,16 @@
+.DS_Store
+assets/unzipped_temp/
+last-ned-bilder.sh
+
+# Originalfiler med mellomrom i navn (kopiert til lowercase-versjoner)
+"assets/photos/Aslak Ege.jpg"
+"assets/photos/Damian Hamre.jpg"
+"assets/photos/Heidi Wilhelmsen.png"
+"assets/photos/Henrik Farstad.jpg"
+"assets/photos/Lise Grønland.jpeg"
+"assets/photos/Silje Larsen.jpg"
+"assets/photos/Sindre Larsen.jpg"
+"assets/photos/Fredrik Kalseth.jpg"
+"assets/photos/Danijel.jpg"
+"assets/photos/Frode.jpg"
+"assets/photos/Pål Werdenhoff.jpg"

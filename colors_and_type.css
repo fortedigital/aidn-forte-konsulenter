@@ -1,0 +1,236 @@
+/* Forte Digital — Color & Type Tokens
+ * Source: forte-brand skill + uploaded brand assets.
+ * Plum + Cream is the default duo. Layouts alternate dark and light.
+ * No shadows, no decorative borders. Highlight orange max 1–2 per page.
+ */
+
+/* Webfonts — Aptos (Microsoft, by Steve Matteson, 2023).
+ * Local TTF files in /fonts/. Self-hosted; no CDN dependency.
+ * Forte uses Light, Regular, and Semibold weights only.
+ * Roboto is loaded via Google Fonts for Word document fidelity. */
+
+/* Aptos — body text family */
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Light.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Light-Italic.ttf") format("truetype");
+  font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Italic.ttf") format("truetype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-SemiBold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-SemiBold-Italic.ttf") format("truetype");
+  font-weight: 600; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos";
+  src: url("fonts/Aptos-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Aptos Display — headline family (used in Forte deck titles & posters) */
+@font-face {
+  font-family: "Aptos Display";
+  src: url("fonts/Aptos-Display.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos Display";
+  src: url("fonts/Aptos-Display-Italic.ttf") format("truetype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos Display";
+  src: url("fonts/Aptos-Display-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Aptos Mono — for code samples / data */
+@font-face {
+  font-family: "Aptos Mono";
+  src: url("fonts/Aptos-Mono.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Aptos Mono";
+  src: url("fonts/Aptos-Mono-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Aptos Serif — companion serif (rarely used; available for editorial) */
+@font-face {
+  font-family: "Aptos Serif";
+  src: url("fonts/Aptos-Serif.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+/* Volk Sans — Forte's branding/social/merch typeface
+ * Volk Sans is licensed by local offices (limited distribution).
+ * Substitute: DM Sans (closest geometric grotesque on Google Fonts).
+ * Replace with self-hosted Volk Sans .woff2 when available. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* Roboto — Word document body font (matches Forte F-Styles spec) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  /* ─── Primary ──────────────────────────────────────────────── */
+  --plum:           #39344B;   /* Primary text, dark bg, logo default */
+  --cream:          #F2F0E7;   /* Light bg, reversed text on dark   */
+
+  /* ─── Secondary / accent ───────────────────────────────────── */
+  --cookie-dough:   #EDE6C3;   /* Warm accent bg, cards            */
+  --harbour-mist:   #BBC6C5;   /* Subtle bg, neutral sections      */
+  --burgundy:       #511E29;   /* Strong accent, deep sections     */
+  --dark-burgundy:  #3D0E18;   /* Deep bg, strong contrast         */
+  --dark-plum:      #221C38;   /* Alternative dark bg              */
+  --highlight:      #FF6A3D;   /* CTAs, key numbers, links — sparingly */
+  --ash-grey:       #D6DDDC;   /* Dividers, subtle UI              */
+
+  --black:          #000000;
+  --white:          #FFFFFF;
+  --doc-text:       #1A1A1B;   /* Baked into F-styles for Word docs */
+
+  /* ─── Semantic ─────────────────────────────────────────────── */
+  --bg:             var(--cream);
+  --bg-alt:         var(--cookie-dough);
+  --bg-mist:        var(--harbour-mist);
+  --bg-inverse:     var(--plum);
+  --bg-deep:        var(--dark-plum);
+
+  --fg:             var(--plum);
+  --fg-muted:       #6E6878;
+  --fg-on-dark:     var(--cream);
+  --fg-muted-on-dark: var(--harbour-mist);
+
+  --accent:         var(--highlight);
+  --accent-deep:    var(--burgundy);
+
+  --rule:           var(--ash-grey);
+  --rule-on-dark:   rgba(242, 240, 231, 0.18);
+
+  /* ─── Typography ───────────────────────────────────────────── */
+  /* Display = headlines; Body = subheadings + paragraphs; Doc = Word docs */
+  --font-display:   "Aptos Display", "Aptos", system-ui, Arial, sans-serif;
+  --font-body:      "Aptos", system-ui, Arial, sans-serif;
+  --font-brand:     "Volk Sans", "DM Sans", system-ui, Arial, sans-serif;
+  --font-mono:      "Aptos Mono", ui-monospace, Menlo, monospace;
+  --font-doc:       "Roboto", system-ui, Arial, sans-serif;
+
+  /* Type scale */
+  --fs-display-xl: clamp(56px, 7.5vw, 120px);
+  --fs-display-l:  clamp(40px, 5vw, 80px);
+  --fs-display-m:  clamp(32px, 3.5vw, 56px);
+  --fs-h1:         40px;
+  --fs-h2:         28px;
+  --fs-h3:         22px;
+  --fs-body-l:     20px;
+  --fs-body:       16px;
+  --fs-body-s:     14px;
+  --fs-eyebrow:    12px;
+
+  --lh-display:    0.95;
+  --lh-tight:      1.1;
+  --lh-body:       1.5;
+
+  --ls-display:    -0.025em;
+  --ls-eyebrow:    0.12em;
+
+  /* Forte uses Light (300), Regular (400), Semibold (600). No medium, no bold. */
+  --fw-light:      300;
+  --fw-regular:    400;
+  --fw-semibold:   600;
+
+  /* ─── Spacing (8pt base) ───────────────────────────────────── */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 128px;
+
+  /* ─── Radii — minimal, the brand avoids ornament ───────────── */
+  --r-0: 0;
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-pill: 999px;
+
+  /* No shadows. Use --rule or color contrast for separation. */
+}
+
+/* ─── Base elements ──────────────────────────────────────────── */
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Hyphenation for long compound words (German, Norwegian, Polish).
+     Honored when an element has a `lang` attribute. */
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Headlines use Aptos Display Regular (400). Forte sets headlines in regular,
+ * never medium/bold. Hierarchy comes from size, not weight. */
+h1, .h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-l);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-m);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+h3, .h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  font-weight: var(--fw-regular);
+  color: var(--fg-muted);
+}
+p, .body  { font-size: var(--fs-body); line-height: var(--lh-body); margin: 0; }
+.body-l   { font-size: var(--fs-body-l); line-height: 1.4; }
+.body-s   { font-size: var(--fs-body-s); }
+
+a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* ─── Section blocks (alternate light + dark) ───────────────── */
+.section--dark      { background: var(--plum);          color: var(--cream); }
+.section--dark-plum { background: var(--dark-plum);     color: var(--cream); }
+.section--burgundy  { background: var(--burgundy);      color: var(--cream); }
+.section--light     { background: var(--cream);         color: var(--plum); }
+.section--mist      { background: var(--harbour-mist);  color: var(--plum); }
+.section--dough     { background: var(--cookie-dough);  color: var(--plum); }

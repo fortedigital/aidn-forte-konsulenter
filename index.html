@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forte × Aidn — Ledige ressurser</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="icon" href="assets/Forte_Symbol_black.svg">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--cream); color: var(--plum); }
+  ::selection { background: var(--highlight); color: var(--plum); }
+
+  @keyframes fortePulse {
+    0%, 100% { transform: scale(1);   opacity: 1; }
+    50%       { transform: scale(1.6); opacity: 0.4; }
+  }
+  @keyframes forteUp {
+    from { transform: translate(-50%, 24px); opacity: 0; }
+    to   { transform: translate(-50%, 0);    opacity: 1; }
+  }
+  @keyframes forteFade  { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes forteSlide {
+    from { transform: translateX(24px); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+  }
+
+  button { cursor: pointer; font-family: inherit; }
+  :focus-visible { outline: 2px solid var(--highlight); outline-offset: 2px; }
+
+  /* ─── Header ─────────────────────────────────────────────── */
+  #site-header {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 56px;
+    background: var(--cream); color: var(--plum);
+    border-bottom: 1px solid rgba(57,52,75,0.10);
+    backdrop-filter: saturate(160%);
+  }
+  .header-left { display: flex; align-items: center; gap: 20px; }
+  .header-divider { width: 1px; height: 22px; background: rgba(57,52,75,0.25); flex-shrink: 0; }
+  .header-badge { font-size: 12px; line-height: 1.2; }
+  .header-badge-label {
+    letter-spacing: 0.08em; text-transform: uppercase;
+    font-size: 10.5px; color: var(--fg-muted);
+  }
+  .header-badge-client {
+    font-family: var(--font-display); font-size: 18px;
+    letter-spacing: -0.01em; margin-top: 2px;
+  }
+  .lang-btn {
+    background: transparent; border: 0;
+    font-size: 12px; padding: 4px 6px;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--fg-muted); opacity: 0.65;
+    transition: opacity 150ms, color 150ms;
+  }
+  .lang-btn.active { color: var(--highlight); opacity: 1; }
+
+  /* ─── Hero ───────────────────────────────────────────────── */
+  #hero { padding: 88px 56px 56px; }
+  .eyebrow {
+    font-family: var(--font-body); font-size: 11px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 400; opacity: 0.6;
+  }
+  #hero h1 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(48px, 7.2vw, 112px); line-height: 0.95;
+    letter-spacing: -0.035em; margin: 0;
+  }
+  .highlight-client { font-style: normal; color: var(--highlight); }
+
+  /* ─── Sections ───────────────────────────────────────────── */
+  .page-section { padding: 56px 56px 32px; }
+  .section-header {
+    display: flex; justify-content: space-between;
+    align-items: baseline; gap: 24px;
+    flex-wrap: wrap; margin-bottom: 28px;
+  }
+  .section-title {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(36px, 4.5vw, 56px); line-height: 1;
+    letter-spacing: -0.025em; margin: 0;
+  }
+  .section-sub {
+    margin: 16px 0 0; font-size: 16px;
+    line-height: 1.55; max-width: 600px; color: var(--fg-muted);
+  }
+
+  /* ─── Poster grid (active) ───────────────────────────────── */
+  .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .poster-card {
+    position: relative; display: flex; flex-direction: column;
+    background: var(--cookie-dough); color: var(--plum);
+    aspect-ratio: 4 / 5; padding: 20px; overflow: hidden;
+  }
+  .poster-card .card-photo {
+    flex: 1; margin: -20px -20px 14px -20px;
+    background: center/cover no-repeat #2a2730;
+    position: relative; min-height: 0;
+  }
+  .poster-card h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 22px; line-height: 1; letter-spacing: -0.02em; margin: 0;
+  }
+  .poster-card .card-role {
+    margin: 6px 0 0; font-size: 12px;
+    line-height: 1.35; color: rgba(57,52,75,0.7);
+  }
+
+  /* ─── Available grid ─────────────────────────────────────── */
+  .avail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  .grid-card {
+    display: flex; flex-direction: column;
+    background: var(--cream); color: var(--plum);
+    overflow: hidden; border: 1px solid rgba(57,52,75,0.06);
+  }
+  .grid-card .card-photo {
+    aspect-ratio: 5 / 4;
+    background: center/cover no-repeat #2a2730;
+    position: relative;
+  }
+  .photo-badges {
+    position: absolute; top: 12px; left: 12px;
+    display: flex; gap: 6px; flex-wrap: wrap;
+  }
+  .avail-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; padding: 4px 10px;
+    background: var(--cream); color: var(--plum);
+    border-radius: 999px; line-height: 1;
+  }
+  .dot-green   { width:6px; height:6px; border-radius:999px; background:#3FB57A; flex-shrink:0; }
+  .dot-outline { width:6px; height:6px; border-radius:999px; border:1.5px solid var(--plum); flex-shrink:0; }
+  .talking-pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 11px; padding: 4px 10px;
+    background: var(--highlight); color: var(--plum);
+    line-height: 1; border-radius: 999px;
+  }
+  .talking-dot {
+    width:6px; height:6px; border-radius:999px;
+    background: var(--plum); flex-shrink: 0;
+    animation: fortePulse 1.6s ease-in-out infinite;
+  }
+  .grid-card-body { padding: 20px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .grid-card h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 24px; line-height: 1; letter-spacing: -0.02em; margin: 0;
+  }
+  .grid-card .card-role { margin: 6px 0 0; font-size: 13.5px; line-height: 1.4; color: var(--fg-muted); }
+  .grid-card .card-bio  { margin: 0; font-size: 13.5px; line-height: 1.55; opacity: 0.92; }
+  .card-edu-label { font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-muted); margin-bottom: 4px; }
+  .card-edu { font-size: 13px; line-height: 1.4; }
+  .skills-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .skill-tag {
+    display: inline-flex; align-items: center; height: 22px;
+    padding: 0 10px; font-size: 11.5px;
+    border: 1px solid var(--rule); white-space: nowrap;
+  }
+  .skill-more { font-size: 11.5px; align-self: center; color: var(--fg-muted); }
+  .card-footer {
+    padding-top: 14px; border-top: 1px solid rgba(57,52,75,0.18);
+    display: flex; justify-content: space-between; align-items: end;
+    gap: 12px; margin-top: auto;
+  }
+  .card-meta { font-size: 11px; line-height: 1.4; color: var(--fg-muted); }
+  /* ─── Contact strip ──────────────────────────────────────── */
+  #contact-strip {
+    padding: 72px 56px 96px;
+    background: var(--cookie-dough); color: var(--plum);
+    margin-top: 56px;
+  }
+  .contact-grid {
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 40px; align-items: center; max-width: 720px;
+  }
+  .contact-photo {
+    width: 160px; height: 160px; border-radius: 50%;
+    background: var(--harbour-mist) center/cover no-repeat;
+    flex-shrink: 0;
+  }
+  .contact-info { display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+  .contact-name {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 36px; line-height: 1; letter-spacing: -0.02em;
+  }
+  .contact-role { color: var(--fg-muted); font-size: 14px; margin-bottom: 6px; }
+  .contact-link {
+    color: inherit; text-underline-offset: 4px;
+    font-family: var(--font-mono); font-size: 14px;
+  }
+
+  /* ─── Responsive ─────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    body { font-size: 15px; }
+    #site-header, #hero, .page-section, #contact-strip {
+      padding-left: 24px !important; padding-right: 24px !important;
+    }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-photo { width: 120px; height: 120px; }
+  }
+</style>
+<script src="data.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header id="site-header">
+  <div class="header-left">
+    <img src="assets/forte-logo-plum.svg" alt="Forte" style="height:26px">
+    <span class="header-divider"></span>
+    <div class="header-badge">
+      <div class="header-badge-label" id="hdr-badge-for"></div>
+      <div class="header-badge-client" id="hdr-client"></div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:4px">
+    <button class="lang-btn active" data-lang="no" onclick="setLang('no')">NO</button>
+    <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="eyebrow" id="hero-eyebrow" style="margin-bottom:24px"></div>
+  <h1 id="hero-headline"></h1>
+</section>
+
+<!-- Active consultants -->
+<section class="page-section" id="section-active"></section>
+
+<!-- Available consultants -->
+<section class="page-section" id="section-available"></section>
+
+<!-- Contact strip -->
+<section id="contact-strip"></section>
+
+<script>
+// ─── Data ──────────────────────────────────────────────────────────────────
+const CONFIG = window.DEFAULT_CONFIG;
+const POOL   = window.CONSULTANT_POOL;
+const COPY   = window.COPY;
+
+// ─── State ─────────────────────────────────────────────────────────────────
+const state = { lang: 'no' };
+
+// ─── Helpers ───────────────────────────────────────────────────────────────
+const fill = (tpl, vars) => (tpl || '').replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? '');
+const byId = id => POOL.find(p => p.id === id);
+const esc  = s => String(s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+const resolveActive = id => {
+  const p = byId(id); if (!p) return null;
+  return { ...p, status: 'active',
+    since: CONFIG.since?.[id] || '',
+    team:  CONFIG.team?.[id]  || { no: '', en: '' } };
+};
+const resolveAvail = id => {
+  const p = byId(id); if (!p) return null;
+  const date = CONFIG.availableFrom?.[id];
+  return { ...p,
+    status:  date ? 'from' : 'now',
+    date:    date,
+    rate:    CONFIG.rates?.[id] ?? p.defaultRate,
+    talking: !!CONFIG.talking?.[id] };
+};
+
+// ─── Card builders ─────────────────────────────────────────────────────────
+function posterCardHTML(c) {
+  return `
+  <article class="poster-card">
+    <div class="card-photo" style="background-image:url('${esc(c.photo)}')">
+      <svg style="position:absolute;top:14px;right:-18px" width="44" height="44" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="22" fill="var(--cookie-dough)"/>
+      </svg>
+    </div>
+    <h3>${esc(c.name)}</h3>
+    <p class="card-role">${esc(c.role[state.lang])}</p>
+  </article>`;
+}
+
+function gridCardHTML(c) {
+  const lang = state.lang;
+  const t    = COPY[lang];
+  const statusBadge = c.status === 'now'
+    ? `<span class="avail-pill"><span class="dot-green"></span>${t.availableNow}</span>`
+    : `<span class="avail-pill"><span class="dot-outline"></span>${t.from} ${c.date ? esc(c.date[lang]) : ''}</span>`;
+
+  const talkingBadge = c.talking
+    ? `<span class="talking-pill"><span class="talking-dot"></span>${t.talking}</span>`
+    : '';
+
+  const skillsHTML = c.skills.slice(0, 4).map(s => `<span class="skill-tag">${esc(s)}</span>`).join('')
+    + (c.skills.length > 4 ? `<span class="skill-more">+${c.skills.length - 4}</span>` : '');
+
+  const eduHTML = c.education?.[lang] ? `
+    <div>
+      <div class="card-edu-label">${t.education}</div>
+      <div class="card-edu">${esc(c.education[lang])}</div>
+    </div>` : '';
+
+  return `
+  <article class="grid-card">
+    <div class="card-photo" style="background-image:url('${esc(c.photo)}')">
+      <div class="photo-badges">${statusBadge}${talkingBadge}</div>
+    </div>
+    <div class="grid-card-body">
+      <div>
+        <h3>${esc(c.name)}</h3>
+        <p class="card-role">${esc(c.role[lang])} · ${c.years} ${t.years}</p>
+      </div>
+      <p class="card-bio">${esc(c.bio[lang])}</p>
+      ${eduHTML}
+      <div class="skills-row">${skillsHTML}</div>
+      <div style="flex:1"></div>
+      <div class="card-footer">
+        <div class="card-meta">${c.rate ? c.rate.toLocaleString('nb-NO') + ' ' + t.rate : ''}</div>
+      </div>
+    </div>
+  </article>`;
+}
+
+// ─── Renderers ──────────────────────────────────────────────────────────────
+function renderHeader() {
+  const t = COPY[state.lang];
+  document.getElementById('hdr-badge-for').textContent = t.badgeFor;
+  document.getElementById('hdr-client').textContent    = CONFIG.client;
+  document.querySelectorAll('.lang-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.lang === state.lang));
+}
+
+function renderHero() {
+  const { lang } = state;
+  const t        = COPY[lang];
+  const headline = fill(t.headline, { client: CONFIG.client });
+  const parts    = headline.split(CONFIG.client);
+  document.getElementById('hero-eyebrow').textContent =
+    `Forte × ${CONFIG.client} · ${new Date().toLocaleDateString(
+      lang === 'no' ? 'nb-NO' : 'en-GB',
+      { day: '2-digit', month: 'short', year: 'numeric' }
+    )}`;
+  document.getElementById('hero-headline').innerHTML =
+    `${esc(parts[0])}<em class="highlight-client">${esc(CONFIG.client)}</em>${esc(parts[1] || '')}`;
+}
+
+function renderActive() {
+  const { lang } = state;
+  const t        = COPY[lang];
+  const items    = (CONFIG.activeIds || []).map(resolveActive).filter(Boolean);
+  const el       = document.getElementById('section-active');
+  if (!items.length) { el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-header"><div>
+      <div class="eyebrow" style="margin-bottom:12px">01 / 02 &middot; ${items.length} ${lang === 'no' ? 'konsulenter' : 'consultants'}</div>
+      <h2 class="section-title">${fill(t.section1, { client: CONFIG.client })}</h2>
+      <p class="section-sub">${fill(t.section1Sub, { client: CONFIG.client })}</p>
+    </div></div>
+    <div class="poster-grid">${items.map(posterCardHTML).join('')}</div>`;
+}
+
+function renderAvailable() {
+  const { lang } = state;
+  const t        = COPY[lang];
+  const items    = (CONFIG.availableIds || []).map(resolveAvail).filter(Boolean);
+  const el       = document.getElementById('section-available');
+  if (!items.length) { el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="section-header"><div>
+      <div class="eyebrow" style="margin-bottom:12px">02 / 02 &middot; ${items.length} ${lang === 'no' ? 'konsulenter' : 'consultants'}</div>
+      <h2 class="section-title">${fill(t.section2, { client: CONFIG.client })}</h2>
+      <p class="section-sub">${fill(t.section2Sub, { client: CONFIG.client })}</p>
+    </div></div>
+    <div class="avail-grid">${items.map(gridCardHTML).join('')}</div>`;
+}
+
+function renderContact() {
+  const { lang } = state;
+  const t        = COPY[lang];
+  const c        = CONFIG.contact || {};
+  const role     = c.role ? (c.role[lang] || c.role.no || '') : '';
+  document.getElementById('contact-strip').innerHTML = `
+    <div class="contact-grid">
+      <div class="contact-photo"></div>
+      <div class="contact-info">
+        <div class="eyebrow" style="margin-bottom:4px">${t.contact}</div>
+        <div class="contact-name">${esc(c.name || '')}</div>
+        <div class="contact-role">${esc(role)}</div>
+        ${c.email ? `<a href="mailto:${esc(c.email)}" class="contact-link">${esc(c.email)}</a>` : ''}
+        ${c.phone ? `<a href="tel:${esc(c.phone.replace(/\s/g, ''))}" class="contact-link">${esc(c.phone)}</a>` : ''}
+      </div>
+    </div>`;
+}
+
+// ─── Actions ─────────────────────────────────────────────────────────────────
+function setLang(lang) {
+  state.lang = lang;
+  document.documentElement.lang = lang;
+  renderHeader();
+  renderHero();
+  renderActive();
+  renderAvailable();
+  renderContact();
+}
+
+// ─── Boot ─────────────────────────────────────────────────────────────────
+renderHeader();
+renderHero();
+renderActive();
+renderAvailable();
+renderContact();
+</script>
+</body>
+</html>
