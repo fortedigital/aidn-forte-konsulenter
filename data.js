@@ -86,9 +86,9 @@ window.CONSULTANT_POOL = [
     id: "damian",
     flowcaseId: "5d692b4be32c480e8dce0992",
     name: "Damian Hamre",
-    role: { no: "Senior full-stack utvikler", en: "Senior Full-Stack Developer" },
-    skills: ["C#", ".NET", "TypeScript", "React", "Full-stack"],
-    years: 9,
+    role: { no: "Senior frontend-utvikler", en: "Senior Frontend Developer" },
+    skills: ["React", "TypeScript", "JavaScript", "C#", ".NET"],
+    years: 13,
     defaultRate: 1400,
     photo: "assets/photos/damian.jpg",
     education: {
@@ -96,8 +96,8 @@ window.CONSULTANT_POOL = [
       en: "M.Sc. Computer Engineering, NTNU (2013) · B.Sc. Engineering (Computer Science), Østfold University College (2011)",
     },
     bio: {
-      no: "Senior full-stack utvikler med solid bakgrunn i .NET/C# backend og React/TypeScript frontend. Kom til Forte fra Telenor, der han i tre år jobbet på CDN-teamet, og før det Viaplay Group. Trives i produktnære team og er vant til å eie både frontend og backend.",
-      en: "Senior full-stack developer with strong .NET/C# backend and React/TypeScript frontend skills. Joined Forte from Telenor's CDN team (3 years), previously at Viaplay Group. Comfortable in product-focused teams and used to owning both front and backend.",
+      no: "Senior frontend-utvikler hos Forte siden 2019. Kom fra Sopra Steria der han i seks år jobbet som Software Engineer — primært med SharePoint-utvikling. Sterk på React, TypeScript og JavaScript, med full-stack-kapasitet via .NET/C#.",
+      en: "Senior frontend developer at Forte since 2019. Joined from Sopra Steria where he spent six years as a Software Engineer, primarily on SharePoint development. Strong in React, TypeScript and JavaScript, with full-stack capability via .NET/C#.",
     },
   },
   {
@@ -106,7 +106,7 @@ window.CONSULTANT_POOL = [
     name: "Henrik Farstad",
     role: { no: "Senior frontend-utvikler", en: "Senior Frontend Developer" },
     skills: ["TypeScript", "React", "Next.js", "WCAG", "GraphQL"],
-    years: 13,
+    years: 9,
     defaultRate: 1400,
     photo: "assets/photos/henrik-farstad.jpg",
     education: {
@@ -114,8 +114,8 @@ window.CONSULTANT_POOL = [
       en: "B.Sc. Computer Engineering, NTNU (2017)",
     },
     bio: {
-      no: "Senior frontend-utvikler med 13 år og sterk kompetanse i React, TypeScript og universell utforming (WCAG). Hos Forte siden 2019, med bakgrunn fra Sopra Steria. Trives med komplekse grensesnitt der ytelse og tilgjengelighet begge teller — og har full-stack-erfaring via Node.js og C#.",
-      en: "Senior frontend developer with 13 years of experience, strong in React, TypeScript and accessibility (WCAG). At Forte since 2019, previously at Sopra Steria. Thrives on complex interfaces where performance and accessibility both matter — and brings full-stack experience via Node.js and C#.",
+      no: "Senior frontend-utvikler hos Forte siden mars 2023. Kom fra Telenor der han tre år jobbet som full-stack-utvikler på CDN-teamet. Før det tre år hos Viaplay Group som ansvarlig utvikler på intern SalesBox-applikasjon. Sterk i React, TypeScript og Next.js, med fokus på tilgjengelighet (WCAG).",
+      en: "Senior frontend developer at Forte since March 2023. Joined from Telenor where he spent three years as a full-stack developer on the CDN team. Before that, three years at Viaplay Group as lead developer on their in-house SalesBox application. Strong in React, TypeScript and Next.js, with a focus on accessibility (WCAG).",
     },
   },
   {
