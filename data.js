@@ -13,7 +13,7 @@ window.CONSULTANT_POOL = [
     name: "Danijel Simeunovic",
     role: { no: "Teknisk arkitekt", en: "Technical Architect" },
     skills: [".NET", "C#", "OpenID Connect", "OAuth 2.0", "Kubernetes"],
-    years: 23,
+    years: 28,
     defaultRate: 1650,
     photo: "assets/photos/danijel.jpg",
     education: {
@@ -47,7 +47,7 @@ window.CONSULTANT_POOL = [
     id: "frode",
     flowcaseId: "621f4725e14af3111d37fad4",
     name: "Frode Selnes Haugarne",
-    role: { no: "Senior backend-utvikler", en: "Senior Backend Developer" },
+    role: { no: "Seniorutvikler", en: "Senior Developer" },
     skills: ["C#", ".NET", "Azure", "SQL", "Terraform"],
     years: 13,
     defaultRate: 1400,
@@ -69,7 +69,7 @@ window.CONSULTANT_POOL = [
     name: "Sindre Løvseth Larsen",
     role: { no: "Senior digital designer", en: "Senior Digital Designer" },
     skills: ["Figma", "Design System", "UX/UI Design", "Brukertesting", "Interaksjonsdesign"],
-    years: 20,
+    years: 24,
     defaultRate: 1400,
     photo: "assets/photos/sindre.jpg",
     education: {
@@ -81,61 +81,6 @@ window.CONSULTANT_POOL = [
       en: "Senior digital designer with 20+ years at the intersection of graphic design, brand and digital product development. Joined Forte in 2022 after 13 years at Signex and stints at Uniform and Iteo. Strong in design systems, visual identity and Figma — and comfortable delivering from concept to production-ready component.",
     },
   },
-  {
-    id: "aslak",
-    flowcaseId: "683f00dedf8e42003ba98b22",
-    name: "Aslak Ege",
-    role: { no: "Teknologidirektør", en: "Technology Director" },
-    skills: ["Virksomhetsarkitektur", "IT-governance", "Endringsledelse", "Organisasjonsdesign", "NIS2/DORA"],
-    years: 22,
-    defaultRate: 1737,
-    photo: "assets/photos/aslak.jpg",
-    education: {
-      no: "Sivilingeniør datateknikk, NTNU (2004) · Master of Management, BI (2009)",
-      en: "M.Sc. Computer Engineering, NTNU (2004) · Master of Management, BI (2009)",
-    },
-    bio: {
-      no: "Teknologidirektør hos Forte og tidligere konsernleder i Capra Group. Over 20 år med strategisk rådgivning, organisasjonsdesign og teknologiledelse — blant annet som daglig leder og principal consultant i Capra Consulting og seniorkonsulent hos Det Norske Veritas. Sterk på IT-governance, virksomhetsarkitektur og endringsledelse.",
-      en: "Technology Director at Forte and former Group CEO of Capra Group. 20+ years of strategic advisory, organisational design and technology leadership — including as Managing Director and Principal Consultant at Capra Consulting and Senior Consultant at Det Norske Veritas. Strong in IT governance, enterprise architecture and change management.",
-    },
-  },
-  {
-    id: "pal",
-    flowcaseId: "5fd2042fc964df10fe7df15b",
-    name: "Pål Werdenhoff",
-    role: { no: "Leveransedirektør", en: "Head of Delivery" },
-    skills: ["Leveranseledelse", "Strategisk rådgivning", "Agile/Scrum", "Endringsledelse", "Produktledelse"],
-    years: 21,
-    defaultRate: 1737,
-    photo: "assets/photos/pal.jpg",
-    education: {
-      no: "MSc Distributed Systems, Heriot-Watt University (2005) · B.Sc. informatikk, HiO (2004)",
-      en: "MSc Distributed Systems, Heriot-Watt University (2005) · B.Sc. Computer Science, HiO (2004)",
-    },
-    bio: {
-      no: "Leveransedirektør i Forte Digital med 20 år fra digitale leveranser og kunderelasjoner. Tidligere daglig leder for Futurice Norge og Client Director i Making Waves Sverige. Sterk på leveranseledelse, smidig metodikk og det å bygge team som leverer over tid.",
-      en: "Head of Delivery at Forte Digital with 20 years of experience in digital delivery and client relationships. Former Managing Director of Futurice Norway and Client Director at Making Waves Sweden. Strong in delivery management, agile methodology and building high-performing teams.",
-    },
-  },
-  {
-    id: "heidi",
-    flowcaseId: "5dcaae27d3915c0ea03a3539",
-    name: "Heidi Wilhelmsen",
-    role: { no: "Design Director (80%)", en: "Design Director (80%)" },
-    skills: ["Merkevarestrategi", "Merkevareidentitet", "Brand strategi", "UX", "Figma"],
-    years: 22,
-    defaultRate: 1737,
-    photo: "assets/photos/heidi.png",
-    education: {
-      no: "Art Director, Westerdals School of Communication (2003)",
-      en: "Art Director, Westerdals School of Communication (2003)",
-    },
-    bio: {
-      no: "Design Director og leder for digital design og merkevareopplevelse i Forte. Bakgrunn fra Anti (strategisk rådgiver og partner), Bleed Designstudio og Scandinavian Design Group. Over 20 år med merkevare- og designstrategi for norske og internasjonale selskaper. Tilgjengelig 80%.",
-      en: "Design Director and Head of Digital Design & Brand Experience at Forte. Background from Anti (Strategic Director and Partner), Bleed Designstudio and Scandinavian Design Group. 20+ years in brand and design strategy for Norwegian and international companies. Available 80%.",
-    },
-  },
-
   // ─── Available – fra 1. juni 2026 ─────────────────────────────────────────
   {
     id: "damian",
@@ -147,8 +92,8 @@ window.CONSULTANT_POOL = [
     defaultRate: 1400,
     photo: "assets/photos/damian.jpg",
     education: {
-      no: "B.Sc. dataingeniør, NTNU (2017)",
-      en: "B.Sc. Computer Engineering, NTNU (2017)",
+      no: "M.Sc. Sivilingeniør Datateknikk, NTNU (2013) · B.Sc. Ingeniør data, Høgskolen i Østfold (2011)",
+      en: "M.Sc. Computer Engineering, NTNU (2013) · B.Sc. Engineering (Computer Science), Østfold University College (2011)",
     },
     bio: {
       no: "Senior full-stack utvikler med solid bakgrunn i .NET/C# backend og React/TypeScript frontend. Kom til Forte fra Telenor, der han i tre år jobbet på CDN-teamet, og før det Viaplay Group. Trives i produktnære team og er vant til å eie både frontend og backend.",
@@ -165,8 +110,8 @@ window.CONSULTANT_POOL = [
     defaultRate: 1400,
     photo: "assets/photos/henrik-farstad.jpg",
     education: {
-      no: "M.Sc. datateknikk, NTNU (2013)",
-      en: "M.Sc. Computer Engineering, NTNU (2013)",
+      no: "B.Sc. Dataingeniør, NTNU (2017)",
+      en: "B.Sc. Computer Engineering, NTNU (2017)",
     },
     bio: {
       no: "Senior frontend-utvikler med 13 år og sterk kompetanse i React, TypeScript og universell utforming (WCAG). Hos Forte siden 2019, med bakgrunn fra Sopra Steria. Trives med komplekse grensesnitt der ytelse og tilgjengelighet begge teller — og har full-stack-erfaring via Node.js og C#.",
@@ -221,8 +166,8 @@ window.CONSULTANT_POOL = [
     defaultRate: 1000,
     photo: "assets/photos/lise.jpeg",
     education: {
-      no: "M.Sc. Informatikk (programmering og systemarkitektur), UiO (2026) · B.Sc. Informatikk (design og interaksjon), UiO (2024)",
-      en: "M.Sc. Computer Science (programming & system architecture), UiO (2026) · B.Sc. Computer Science (design & interaction), UiO (2024)",
+      no: "M.Sc. Informatikk (programmering og systemarkitektur), UiO (2026) · B.Sc. Informatikk (design, bruk og interaksjon), UiO (2024)",
+      en: "M.Sc. Computer Science (programming & system architecture), UiO (2026) · B.Sc. Computer Science (design, use & interaction), UiO (2024)",
     },
     bio: {
       no: "Graduate med dobbel bakgrunn i informatikk og samfunnsøkonomi fra Universitetet i Oslo. Masteroppgave om energigjeld i kode. Bred teknisk profil: React, TypeScript og Python kombinert med sterk UX-sans og Figma. Internship hos Telenor (full-stack og UX) og Storebrand (innsiktsarbeid og brukertesting). Kobler teknisk utvikling med brukerforståelse.",
@@ -243,8 +188,8 @@ window.CONSULTANT_POOL = [
       en: "B.Sc. Business Administration, BI Oslo (2015)",
     },
     bio: {
-      no: "Senior produktleder med internasjonal bakgrunn fra humanitær teknologi og fintech. Kom til Forte fra IFRC/Røde Kors, der hun ledet ferdigstillingen av et globalt helseinformasjonssystem for nødhjelpsoperasjoner. Tidligere produktansvarlig i Tietoevry (digitale låneløsninger, 20+ banker). Sterk i Continuous Discovery, produktstrategi og å koble brukerbehov til teknisk retning.",
-      en: "Senior product manager with an international background in humanitarian technology and fintech. Joined Forte from IFRC/Red Cross, where she led the completion of a global health information system for emergency response units. Previously Product Manager at Tietoevry (digital lending, 20+ banks). Strong in Continuous Discovery, product strategy and bridging user needs to technical direction.",
+      no: "Senior produktleder med internasjonal bakgrunn fra humanitær teknologi og fintech. Kom til Forte fra IFRC/Røde Kors, der hun ledet ferdigstillingen av et globalt helseinformasjonssystem for nødhjelpsoperasjoner. Tidligere produktansvarlig i Tietoevry (digitale låneløsninger, over 20 kunder). Sterk i Continuous Discovery, produktstrategi og å koble brukerbehov til teknisk retning.",
+      en: "Senior product manager with an international background in humanitarian technology and fintech. Joined Forte from IFRC/Red Cross, where she led the completion of a global health information system for emergency response units. Previously Product Manager at Tietoevry (digital lending, 20+ clients). Strong in Continuous Discovery, product strategy and bridging user needs to technical direction.",
     },
   },
 ];
