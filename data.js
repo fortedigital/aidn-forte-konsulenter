@@ -181,7 +181,7 @@ window.CONSULTANT_POOL = [
     role: { no: "Design Director", en: "Design Director" },
     skills: ["Business Design", "Strategisk rådgivning", "Design Thinking", "UX", "Forretningsutvikling"],
     years: 19,
-    defaultRate: 1500,
+    defaultRate: 1650,
     photo: "assets/photos/anne-gundersen.jpg",
     education: {
       no: "B.Hons Design, Unitec Institute of Technology, Auckland (2005)",
@@ -217,7 +217,7 @@ window.CONSULTANT_POOL = [
     role: { no: "Tjenestedesigner", en: "Service Designer" },
     skills: ["Tjenestedesign", "UX Design", "Figma", "Brukertesting", "Innsiktsarbeid"],
     years: 4,
-    defaultRate: 1200,
+    defaultRate: 1400,
     photo: "assets/photos/gabriella-horne.jpg",
     education: {
       no: "B.Sc. Tjenestedesign, Høyskolen Kristiania/Westerdals (2022)",
@@ -235,7 +235,7 @@ window.CONSULTANT_POOL = [
     role: { no: "Fullstack-utvikler", en: "Full-Stack Developer" },
     skills: ["React", "TypeScript", "Next.js", "Python", "JavaScript"],
     years: 5,
-    defaultRate: 1200,
+    defaultRate: 1000,
     photo: "assets/photos/ola-skarphol.jpg",
     education: {
       no: "B.Sc. Informatikk, Universitetet i Oslo (2020)",
