@@ -260,7 +260,7 @@ window.DEFAULT_CONFIG = {
     phone: "+47 907 25 404",
   },
   activeIds: ["danijel", "fredrik", "frode"],
-  availableIds: ["damian", "henrik-farstad", "lise", null, "guro", "sindre", "anders", "silje"],
+  availableIds: ["henrik-farstad", "lise", null, "guro", "sindre", "anders", "silje"],
   rates: {},
   since: {
     danijel: "",
@@ -273,7 +273,6 @@ window.DEFAULT_CONFIG = {
     frode:   { no: "", en: "" },
   },
   availableFrom: {
-    damian:          { no: "1. juni 2026",    en: "Jun 1, 2026"  },
     "henrik-farstad": { no: "1. juni 2026",   en: "Jun 1, 2026"  },
     anders:          { no: "1. juni 2026",    en: "Jun 1, 2026"  },
     guro:            { no: "1. august 2026",    en: "Aug 1, 2026"  },
