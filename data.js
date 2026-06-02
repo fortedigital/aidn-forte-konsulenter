@@ -137,6 +137,134 @@ window.CONSULTANT_POOL = [
     },
   },
 
+  // ─── Andre tilgjengelige konsulenter ──────────────────────────────────────
+  {
+    id: "nadia-tokerud",
+    flowcaseId: "67e5354eadb155004989ee69",
+    name: "Nadia Tokerud",
+    role: { no: "Senior UX-designer", en: "Senior UX Designer" },
+    skills: ["UX Design", "UI Design", "Figma", "Brukertesting", "WCAG"],
+    years: 17,
+    defaultRate: 1400,
+    photo: "assets/photos/nadia-tokerud.jpg",
+    education: {
+      no: "Interaksjonsdesign og brukervennlighet, Høyskolen i Volda (2019) · BA(hons) Graphic Design, Arts University Bournemouth (2008)",
+      en: "Interaction Design & Usability, Høyskolen i Volda (2019) · BA(hons) Graphic Design, Arts University Bournemouth (2008)",
+    },
+    bio: {
+      no: "Senior UX-designer hos Forte siden mai 2025. Kom fra Buypass der hun tre år ledet UX-arbeidet på tvers av alle produkter og tjenester. Før det tre år hos Norsk Rikstoto som interaksjonsdesigner. Sterk på innsiktsarbeid, kundereiser og universell utforming (WCAG).",
+      en: "Senior UX designer at Forte since May 2025. Joined from Buypass where she spent three years leading UX across all products and services. Previously three years at Norsk Rikstoto as interaction designer. Strong in user research, customer journeys and accessibility (WCAG).",
+    },
+  },
+  {
+    id: "goril",
+    flowcaseId: "60e1e470e338b50fbf560e61",
+    name: "Gøril Johnstad Hansen",
+    role: { no: "Senior digital designer", en: "Senior Digital Designer" },
+    skills: ["Figma", "Branding", "UI Design", "Visuell identitet", "Design System"],
+    years: 22,
+    defaultRate: 1400,
+    photo: "assets/photos/goril-johnstad-hansen.jpg",
+    education: {
+      no: "B.Sc. Graphic Design, Swinburne National School of Design (2002) · 2-årig fagskole Design, Westerdals (2001)",
+      en: "B.Sc. Graphic Design, Swinburne National School of Design (2002) · 2-year Design programme, Westerdals (2001)",
+    },
+    bio: {
+      no: "Senior digital designer hos Forte siden 2021. Over 20 år i designbransjen — fra Itera Gazette via Havnevik og Gerilja Hansen. Bred erfaring med visuell identitet, UI/UX og art direction for kunder som NHO, Nationaltheatret og Røde Kors.",
+      en: "Senior digital designer at Forte since 2021. Over 20 years in the design industry — from Itera Gazette via Havnevik and Gerilja Hansen. Deep experience in visual identity, UI/UX and art direction for clients including NHO, Nationaltheatret and the Red Cross.",
+    },
+  },
+  {
+    id: "anne-gundersen",
+    flowcaseId: "605db4156c425a0e27b1f106",
+    name: "Anne Gundersen",
+    role: { no: "Design Director", en: "Design Director" },
+    skills: ["Business Design", "Strategisk rådgivning", "Design Thinking", "UX", "Forretningsutvikling"],
+    years: 19,
+    defaultRate: 1500,
+    photo: "assets/photos/anne-gundersen.jpg",
+    education: {
+      no: "B.Hons Design, Unitec Institute of Technology, Auckland (2005)",
+      en: "B.Hons Design, Unitec Institute of Technology, Auckland (2005)",
+    },
+    bio: {
+      no: "Design Director hos Forte siden 2021. Kom fra SpareBank 1 Utvikling der hun fem år jobbet som UX-strateg og ledet innovasjonsprosesser og digital strategi på tvers av SpareBank 1-bankene. Bred erfaring fra Noa Ignite (tidl. Making Waves) og strategisk rådgivning for offentlig og privat sektor.",
+      en: "Design Director at Forte since 2021. Joined from SpareBank 1 Utvikling where she spent five years as UX strategist leading innovation processes and digital strategy across the SpareBank 1 banks. Extensive experience from Noa Ignite (fmr. Making Waves) and strategic advisory for public and private sector.",
+    },
+  },
+  {
+    id: "gaute-rossnes",
+    flowcaseId: "5ee70a059ed42d10f091b5b5",
+    name: "Gaute Rossnes",
+    role: { no: "Senior produktleder", en: "Senior Product Manager" },
+    skills: ["Produktledelse", "Scrum Master", "OKR", "Agil metodikk", "Azure DevOps"],
+    years: 22,
+    defaultRate: 1400,
+    photo: "assets/photos/gaute-rossnes.jpg",
+    education: {
+      no: "European Masters in Management (Siviløkonom), ESCP Europe Paris–Oxford–Berlin (1999)",
+      en: "European Masters in Management, ESCP Europe Paris–Oxford–Berlin (1999)",
+    },
+    bio: {
+      no: "Senior produktleder hos Forte siden 2020. Har jobbet som leveranseleder og Scrum Master for OBOS og Norgesgruppen/ASKO. Bred bakgrunn fra Bekk Consulting og som prosjektleder i Nordic Choice Hotels. Sterk i agil metodikk, OKR og å lede tverrfaglige team fra innsikt til levering.",
+      en: "Senior product manager at Forte since 2020. Has worked as delivery lead and Scrum Master for OBOS and Norgesgruppen/ASKO. Wide background from Bekk Consulting and as project manager at Nordic Choice Hotels. Strong in agile methods, OKR and leading cross-functional teams from insight to delivery.",
+    },
+  },
+  {
+    id: "gabriella",
+    flowcaseId: "627b7af1d1bcb51039c9e6c4",
+    name: "Gabriella Horne",
+    role: { no: "Tjenestedesigner", en: "Service Designer" },
+    skills: ["Tjenestedesign", "UX Design", "Figma", "Brukertesting", "Innsiktsarbeid"],
+    years: 4,
+    defaultRate: 1200,
+    photo: "assets/photos/gabriella-horne.jpg",
+    education: {
+      no: "B.Sc. Tjenestedesign, Høyskolen Kristiania/Westerdals (2022)",
+      en: "B.Sc. Service Design, Høyskolen Kristiania/Westerdals (2022)",
+    },
+    bio: {
+      no: "Tjenestedesigner hos Forte siden 2022. Metodisk bakgrunn i brukerorienter utvikling og tjenesteinnovasjon. Sterk på kundereisekartlegging, service blueprints og innsiktsarbeid — og jobber godt i tverrfaglige team.",
+      en: "Service designer at Forte since 2022. Methodical background in user-centred development and service innovation. Strong in customer journey mapping, service blueprints and user research — and works well in cross-functional teams.",
+    },
+  },
+  {
+    id: "ola",
+    flowcaseId: "673486931cd36f0041748295",
+    name: "Ola Skarphol",
+    role: { no: "Fullstack-utvikler", en: "Full-Stack Developer" },
+    skills: ["React", "TypeScript", "Next.js", "Python", "JavaScript"],
+    years: 5,
+    defaultRate: 1200,
+    photo: "assets/photos/ola-skarphol.jpg",
+    education: {
+      no: "B.Sc. Informatikk, Universitetet i Oslo (2020)",
+      en: "B.Sc. Computer Science, University of Oslo (2020)",
+    },
+    bio: {
+      no: "Fullstack-utvikler hos Forte siden januar 2025. Kom fra Funcom der han fire år jobbet med utviklingstesting og QA. B.Sc. Informatikk fra UiO. Sterk i React, TypeScript og Next.js, med Python-bakgrunn fra studiene.",
+      en: "Full-stack developer at Forte since January 2025. Joined from Funcom where he spent four years in dev testing and QA. B.Sc. Computer Science from UiO. Strong in React, TypeScript and Next.js, with Python background from studies.",
+    },
+  },
+  {
+    id: "sigurd",
+    flowcaseId: "6909d02927d38a1eb4f41345",
+    name: "Sigurd Heggemoen",
+    role: { no: "Graduate — AI & Data Science", en: "Graduate — AI & Data Science" },
+    skills: ["Python", "Machine Learning", "LLMs", "React", "TypeScript"],
+    years: 2,
+    defaultRate: 1000,
+    photo: "assets/photos/sigurd-heggemoen.jpg",
+    education: {
+      no: "M.Sc. Sivilingeniør Data Science (maskinlæring), UiS (2026) · B.Sc. Dataingeniør, UiS (2024)",
+      en: "M.Sc. Data Science (machine learning), UiS (2026) · B.Sc. Computer Engineering, UiS (2024)",
+    },
+    bio: {
+      no: "Nyutdannet sivilingeniør i Data Science fra UiS med spesialisering i maskinlæring. Masteroppgave om gruppebasert beslutningstaking i agentbaserte språkmodeller for kliniske oppgaver. Bred teknisk profil: Python, LLMs og full-stack-kapasitet via React og TypeScript. Sommerjobber som fullstack-utvikler hos Gurusoft.",
+      en: "Newly graduated M.Sc. in Data Science from UiS, specialising in machine learning. Master's thesis on group-based decision making in agent-based language models for clinical tasks. Broad technical profile: Python, LLMs and full-stack capability via React and TypeScript. Summer roles as full-stack developer at Gurusoft.",
+    },
+  },
+
   // ─── Available – fra 1. august 2026 ───────────────────────────────────────
   {
     id: "guro",
@@ -260,7 +388,7 @@ window.DEFAULT_CONFIG = {
     phone: "+47 907 25 404",
   },
   activeIds: ["danijel", "fredrik", "frode"],
-  availableIds: ["henrik-farstad", "lise", null, "guro", "sindre", "anders", "silje"],
+  availableIds: ["henrik-farstad", "lise", null, "guro", "sindre", "silje", "nadia-tokerud", "goril", "anne-gundersen", "gaute-rossnes", "gabriella", "ola", "sigurd"],
   rates: {},
   since: {
     danijel: "",
@@ -274,10 +402,10 @@ window.DEFAULT_CONFIG = {
   },
   availableFrom: {
     "henrik-farstad": { no: "1. juni 2026",   en: "Jun 1, 2026"  },
-    anders:          { no: "1. juni 2026",    en: "Jun 1, 2026"  },
     guro:            { no: "1. august 2026",    en: "Aug 1, 2026"  },
     lise:            { no: "1. september 2026", en: "Sep 1, 2026"  },
     silje:           { no: "1. august 2026",  en: "Aug 1, 2026"  },
+    sigurd:          { no: "1. august 2026",  en: "Aug 1, 2026"  },
   },
   talking: {},
 };
