@@ -388,7 +388,7 @@ window.DEFAULT_CONFIG = {
     phone: "+47 907 25 404",
   },
   activeIds: ["danijel", "fredrik", "frode"],
-  availableIds: ["henrik-farstad", "lise", null, "guro", "sindre", "silje", "nadia-tokerud", "goril", "anne-gundersen", "gaute-rossnes", "gabriella", "ola", "sigurd"],
+  availableIds: ["henrik-farstad", "lise", null, "guro", "sindre", "silje", "nadia-tokerud", "anne-gundersen", "gaute-rossnes", "gabriella", "ola", "sigurd"],
   rates: {},
   since: {
     danijel: "",
