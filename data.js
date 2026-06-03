@@ -146,7 +146,7 @@ window.CONSULTANT_POOL = [
     skills: ["UX Design", "UI Design", "Figma", "Brukertesting", "WCAG"],
     years: 17,
     defaultRate: 1400,
-    photo: "assets/photos/nadia-tokerud.jpg",
+    photo: "assets/photos/nadia.jpg",
     education: {
       no: "Interaksjonsdesign og brukervennlighet, Høyskolen i Volda (2019) · BA(hons) Graphic Design, Arts University Bournemouth (2008)",
       en: "Interaction Design & Usability, Høyskolen i Volda (2019) · BA(hons) Graphic Design, Arts University Bournemouth (2008)",
@@ -164,7 +164,7 @@ window.CONSULTANT_POOL = [
     skills: ["Figma", "Branding", "UI Design", "Visuell identitet", "Design System"],
     years: 22,
     defaultRate: 1400,
-    photo: "assets/photos/goril-johnstad-hansen.jpg",
+    photo: "assets/photos/goril.jpeg",
     education: {
       no: "B.Sc. Graphic Design, Swinburne National School of Design (2002) · 2-årig fagskole Design, Westerdals (2001)",
       en: "B.Sc. Graphic Design, Swinburne National School of Design (2002) · 2-year Design programme, Westerdals (2001)",
@@ -181,8 +181,8 @@ window.CONSULTANT_POOL = [
     role: { no: "Design Director", en: "Design Director" },
     skills: ["Business Design", "Strategisk rådgivning", "Design Thinking", "UX", "Forretningsutvikling"],
     years: 19,
-    defaultRate: 1650,
-    photo: "assets/photos/anne-gundersen.jpg",
+    defaultRate: 1737,
+    photo: "assets/photos/anne.jpg",
     education: {
       no: "B.Hons Design, Unitec Institute of Technology, Auckland (2005)",
       en: "B.Hons Design, Unitec Institute of Technology, Auckland (2005)",
@@ -200,7 +200,7 @@ window.CONSULTANT_POOL = [
     skills: ["Produktledelse", "Scrum Master", "OKR", "Agil metodikk", "Azure DevOps"],
     years: 22,
     defaultRate: 1400,
-    photo: "assets/photos/gaute-rossnes.jpg",
+    photo: "assets/photos/gaute.jpg",
     education: {
       no: "European Masters in Management (Siviløkonom), ESCP Europe Paris–Oxford–Berlin (1999)",
       en: "European Masters in Management, ESCP Europe Paris–Oxford–Berlin (1999)",
@@ -218,7 +218,7 @@ window.CONSULTANT_POOL = [
     skills: ["Tjenestedesign", "UX Design", "Figma", "Brukertesting", "Innsiktsarbeid"],
     years: 4,
     defaultRate: 1400,
-    photo: "assets/photos/gabriella-horne.jpg",
+    photo: "assets/photos/gabriella.jpeg",
     education: {
       no: "B.Sc. Tjenestedesign, Høyskolen Kristiania/Westerdals (2022)",
       en: "B.Sc. Service Design, Høyskolen Kristiania/Westerdals (2022)",
@@ -236,7 +236,7 @@ window.CONSULTANT_POOL = [
     skills: ["React", "TypeScript", "Next.js", "Python", "JavaScript"],
     years: 5,
     defaultRate: 1000,
-    photo: "assets/photos/ola-skarphol.jpg",
+    photo: "assets/photos/ola.jpg",
     education: {
       no: "B.Sc. Informatikk, Universitetet i Oslo (2020)",
       en: "B.Sc. Computer Science, University of Oslo (2020)",
@@ -254,7 +254,7 @@ window.CONSULTANT_POOL = [
     skills: ["Python", "Machine Learning", "LLMs", "React", "TypeScript"],
     years: 2,
     defaultRate: 1000,
-    photo: "assets/photos/sigurd-heggemoen.jpg",
+    photo: "assets/photos/sigurd.jpg",
     education: {
       no: "M.Sc. Sivilingeniør Data Science (maskinlæring), UiS (2026) · B.Sc. Dataingeniør, UiS (2024)",
       en: "M.Sc. Data Science (machine learning), UiS (2026) · B.Sc. Computer Engineering, UiS (2024)",
